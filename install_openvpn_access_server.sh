@@ -1,5 +1,5 @@
 #!/bin/bash
-userPassword=123456
+userPassword=$1
 
 #download the packages
 cd /tmp

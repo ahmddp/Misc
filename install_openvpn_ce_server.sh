@@ -37,15 +37,15 @@ sudo -H pip install PyYAML
 sudo wget -c https://raw.githubusercontent.com/ahmddp/openvpn-azure-ad-auth/master/openvpn-azure-ad-auth.py
 sudo chmod +x openvpn-azure-ad-auth.py
 
-mkdir -p /home/$user/client-configs/files
+sudo mkdir -p /home/$user/client-configs/files
 
-chmod 700 /home/$user/client-configs/files
+sudo chmod 700 /home/$user/client-configs/files
 
 cd /home/$user/client-configs
 
-wget -c https://raw.githubusercontent.com/ahmddp/Misc/master/base.conf
-wget -c https://raw.githubusercontent.com/ahmddp/Misc/master/make_config.sh
-chmod 700 /home/$user/client-configs/make_config.sh
+sudo wget -c https://raw.githubusercontent.com/ahmddp/Misc/master/base.conf
+sudo wget -c https://raw.githubusercontent.com/ahmddp/Misc/master/make_config.sh
+sudo chmod 700 /home/$user/client-configs/make_config.sh
 
 sudo systemctl start openvpn@vpnserver
 
